@@ -26,10 +26,9 @@ header h1 {
 }
 
 header p {
-  font-family: sans-serif;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 900;
-  letter-spacing: 6px;
+  letter-spacing: 4px;
 }
 
 main {
@@ -38,8 +37,8 @@ main {
 }
 
 .card { 
-  font-family: sans-serif;
   font-size: 20px;
+  letter-spacing: 4px;
   padding: 20px 20px;
   color: whitesmoke;
   width: 550px;
@@ -55,6 +54,7 @@ main {
 
 .form-input {
   font-size: 16px;
+  letter-spacing: 1px;
   padding: 8px;
   border-radius: 8px;
   border: 0px solid slategray;
@@ -65,6 +65,7 @@ main {
   padding: 8px;
   color: whitesmoke;
   font-size: 20px;
+  letter-spacing: 2px;
   background-color: royalblue;
   border: 1px solid slategray;
   border-radius: 8px;
@@ -81,6 +82,7 @@ main {
 .searched-city {
   display: flex;
   flex-direction: column;
+  letter-spacing: 4px;
   color: whitesmoke;
   padding-left: 20px;
   border: 2px solid whitesmoke;
@@ -97,12 +99,7 @@ main {
 }
 
 .flex-searched {
-  margin-right: 20px;
   padding: 50px;
   width: auto;
   flex: 2 100;
 }
-
-/* .flex-previous {
-  flex: 1;
-} */
