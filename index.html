@@ -24,7 +24,7 @@
         <form id="user-form" class="card-body">
           <label class="form-label" for="city"></label>
           <input name="city" id="city" type="text" autofocus="true" class="form-input" placeholder="enter city name" />
-          <button type="submit" class="btn">Search</button>
+          <button type="submit" class="btn" data="data">Search</button>
         </form>
       </div>
       
@@ -39,8 +39,8 @@
 
     <div class="flex-searched">
       <div class="searched-city">
-        <h2 class="card-header"> <span id="searched-city">City Name:</span></h2>
-        <div class="card-body" id="weather-data">
+        <h2 class="card-header"> <span id="searched-city-term">City Name:</span></h2>
+        <div id="weather-container" class="weather-data">
         </div>
       </div>
       
@@ -60,6 +60,6 @@
   </main>
 
 
-  
+  <script src="./assets/js/homepage.js"></script>
 </body>
 </html>
