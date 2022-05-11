@@ -2,6 +2,8 @@
   box-sizing: border-box;
 }
 
+
+
 body, html {
   margin-bottom: 12px;
   font-family: 'Newsreader';
@@ -9,9 +11,11 @@ body, html {
   letter-spacing: 2px;
 } 
 
+/* ____________________________________HEADER________________________________________ */
+
 .hero {
   padding: 3% 4%;
-  background: linear-gradient(to left, rgb(99, 137, 252), whitesmoke);
+  background: linear-gradient(to left, rgb(80, 167, 248), whitesmoke);
   color: royalblue;
   line-height: .5;
 }
@@ -32,51 +36,19 @@ header p {
   letter-spacing: 4px;
 }
 
-/* main {
-  margin: 20px auto;
-  width: 100%;
-}
-
-.card { 
-  font-size: 20px;
-  letter-spacing: 3px;
-  background-color: rgb(253, 251, 251);
-  padding: 20px 20px;
-  color: #2c4566;
-  /* width: 550px; */
-/* }  */
-
-.p-2 {
-  line-height: 1.8;
-  background-color: skyblue;
-}
-
-.five-day-title {
-  color: white;
-}
-
-
-
-
-
+/* ____________________________SEARCH and HISTORY SECTION_____________________________ */
 
 .form-input {
   font-size: 16px;
   letter-spacing: 1px;
   padding: 8px;
   border-radius: 8px;
-  /* border: 0px solid #2c4566; */
-}
-
-aside {
-  /* border: 2px solid slategray; */
-  border-radius: 8px;
 }
 
 .search-box {
   display: flex;
   flex-direction: column;
-  margin-top: 12px;
+  margin-top: 13px;
   background-color: lightgray;
   border: 2px solid slategray;
   border-radius: 8px;
@@ -99,7 +71,7 @@ aside {
 }
 
 .search-box li:hover {
-  background-color: aliceblue;
+  background-color: skyblue;
 }
 
 .search-button {
@@ -120,9 +92,25 @@ aside {
   box-shadow: none;
 }
 
+/* ______________________________CURRENT and 5-DAY FORECAST______________________________ */
+
 .divider {
   border-top: 2px solid slategray;
   padding: 14px;
+}
+
+.five-day-title {
+  color: white;
+}
+
+.p-2 {
+  line-height: 1.8;
+  color: black;
+  background-color: aliceblue;
+}
+
+.p-2 h5 {
+  color: black;
 }
 
 .card-body {
