@@ -90,7 +90,7 @@ $(document).ready(function () {
       dataType: "json",
     }).then(function (response) {
       $("#forecast")
-        .html('<h4 class="mt-3">5-Day Forecast:</h4>')
+        .html('<h4 class="mt-3 five-day-title">5-Day Forecast:</h4>')
         .append('<div class="row">');
 
       for (var i = 0; i < response.list.length; i++) {

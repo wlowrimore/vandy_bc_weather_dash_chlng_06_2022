@@ -23,7 +23,7 @@ header {
 
 header h1 {
   font-size: 50px;
-  letter-spacing: 1rem;
+  letter-spacing: 7px;
 }
 
 header p {
@@ -46,33 +46,38 @@ header p {
   /* width: 550px; */
 /* }  */
 
-.card-body {
-  display: flex;
-  display: flex;
-  flex-direction: column;
+.p-2 {
   line-height: 1.8;
+  background-color: skyblue;
+}
+
+.five-day-title {
+  color: white;
 }
 
 
 
-/* .form-input {
+
+
+
+.form-input {
   font-size: 16px;
   letter-spacing: 1px;
   padding: 8px;
   border-radius: 8px;
-  border: 0px solid #2c4566;
+  /* border: 0px solid #2c4566; */
 }
 
 aside {
-  border: 2px solid slategray;
+  /* border: 2px solid slategray; */
   border-radius: 8px;
-} */
+}
 
 .search-box {
   display: flex;
   flex-direction: column;
-  margin: 20px;
-  background-color: lightslategray;
+  margin-top: 12px;
+  background-color: lightgray;
   border: 2px solid slategray;
   border-radius: 8px;
   padding: 12px 12px;
@@ -97,54 +102,29 @@ aside {
   background-color: aliceblue;
 }
 
-.btn {
+.search-button {
   display: flex;
   flex: 2 20;
   padding: 2px 6px;
   margin-left: 8px;
   color: white;
-  font-size: 20px;
-  letter-spacing: 4px;
-  background-color: royalblue;
-  border: 1px solid slategray;
-  border-radius: 3px;
-  box-shadow: 0px 1px 1px 0px rgba(99, 137, 252, 2)
+  font-size:16px;
+  letter-spacing: 3px;
+  background-color: lightslategray;
+  border-radius: 4px;
 }
 
-.btn:hover {
-  background-color: royalblue;
-  opacity: 90%;
-  color: white;
+.search-button:hover {
+  background-color: skyblue;
+  color: #2c4566;
+  box-shadow: none;
 }
 
-/* ______________________________________________________________________________ */
-
-/* .previous-cities {
-  border-top: 2px solid whitesmoke;
-  flex: 2;
+.divider {
+  border-top: 2px solid slategray;
+  padding: 14px;
 }
 
-.searched-city {
-  display: flex;
-  flex-direction: column;
-  letter-spacing: 4px;
-  color: whitesmoke;
-  padding-left: 20px;
-  border: 2px solid whitesmoke;
-  border-radius: 8px;
-} 
-
-.flex-container {
-  display: flex;
-  justify-content: center;
+.card-body {
+  width: 100%;
 }
-
-.flex-city {
-  flex: 1;
-}
-
-.flex-searched {
-  padding: 50px;
-  width: auto;
-  flex: 2 100;
-}  */
