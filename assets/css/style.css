@@ -33,14 +33,14 @@ header p {
 
 main {
   margin: 20px auto;
-  width: 94%;
+  width: 100%;
 }
 
 .card { 
   font-size: 20px;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   padding: 20px 20px;
-  color: whitesmoke;
+  color: #2c4566;
   width: 550px;
 }
 
@@ -57,7 +57,7 @@ main {
   letter-spacing: 1px;
   padding: 8px;
   border-radius: 8px;
-  border: 0px solid slategray;
+  border: 0px solid #2c4566;
 }
 
 .btn {
