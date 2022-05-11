@@ -2,10 +2,9 @@
   box-sizing: border-box;
 }
 
-
-
 body, html {
-  margin-bottom: 12px;
+  position: relative;
+  min-height: 100vh;
   font-family: 'Newsreader';
   background-color: slategray;
   letter-spacing: 2px;
@@ -115,4 +114,20 @@ header p {
 
 .card-body {
   width: 100%;
+}
+
+/* ________________________________________FOOTER_________________________________________ */
+
+footer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0%;
+  width: 100vw;
+  margin-left: -18px;
+  padding: 8px;
+  font-size: 18px;
+  background-color: darkgray;
+  color: black;
+  border: 2px solid slategray;
 }
