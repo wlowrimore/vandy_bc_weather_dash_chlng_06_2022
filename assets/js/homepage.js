@@ -2,6 +2,7 @@ $(document).ready(function () {
   var apikey = "32b7d3a838954e839029c133113c4c54";
   var units = "imperial";
 
+  // sets up the button function to feed the cityValue for request
   $("#btn").on("click", function () {
     var cityValue = $("#search").val();
 
@@ -10,6 +11,7 @@ $(document).ready(function () {
     forecast(cityValue);
   });
 
+  //
   $("#history-list").on("click", "li", function () {
     var historyValue = $(this).text();
     forecast(historyValue);
@@ -23,6 +25,7 @@ $(document).ready(function () {
     historyListItem.prepend(li);
   }
 
+  // This is where the API call is set up to pull in the requested data
   function forecast(cityValue) {
     var queryURL =
       "https://api.openweathermap.org/data/2.5/weather?q=" +
@@ -75,6 +78,7 @@ $(document).ready(function () {
     });
   }
 
+  // passes user's (city name) input to call forecast
   function getForecast(cityValue) {
     var queryURL =
       "https://api.openweathermap.org/data/2.5/forecast?q=" +
@@ -95,7 +99,7 @@ $(document).ready(function () {
 
       for (var i = 0; i < response.list.length; i++) {
         if (response.list[i].dt_txt.indexOf("15:00:00") !== -1) {
-          //  html elements for a bootstrap card
+          // structured card for each day of (5-day) forecast
           var col = $("<div>").addClass("col-md-2");
           var card = $("<div>").addClass("card");
           var body = $("<div>").addClass("card-body p-2");
@@ -127,7 +131,7 @@ $(document).ready(function () {
     });
   }
 
-  // getUVIndex query = UV Index for a city by latitudes and longitudes
+  // passes longitude/latitude per city name query and returns the UV reading
   function getUVIndex(latitude, longitude) {
     var queryURL =
       "https://api.openweathermap.org/data/2.5/uvi?appid=" +
@@ -145,7 +149,7 @@ $(document).ready(function () {
       var uv = $("<p>").text("UV Index: ");
       var btn = $("<span>").addClass("btn btn-sm").text(response.value);
 
-      // colors for uv value
+      // bootstrap classes representing UV reading
       if (response.value < 3) {
         btn.addClass("btn-success");
       } else if (response.value < 7) {
@@ -158,15 +162,13 @@ $(document).ready(function () {
     });
   }
 
-  // current history
+  // pulls latest entries from local storage
   var history = JSON.parse(window.localStorage.getItem("history")) || [];
 
-  //latest history value
   if (history.length > 0) {
     forecast(history[history.length - 1]);
   }
 
-  //local storage
   for (var i = 0; i < history.length; i++) {
     createRow(history[i]);
   }
