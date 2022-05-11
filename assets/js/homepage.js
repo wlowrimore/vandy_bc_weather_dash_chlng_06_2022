@@ -97,7 +97,7 @@ $(document).ready(function () {
         if (response.list[i].dt_txt.indexOf("15:00:00") !== -1) {
           //  html elements for a bootstrap card
           var col = $("<div>").addClass("col-md-2");
-          var card = $("<div>").addClass("card bg-primary text-white");
+          var card = $("<div>").addClass("card");
           var body = $("<div>").addClass("card-body p-2");
 
           tempDate = new Date(

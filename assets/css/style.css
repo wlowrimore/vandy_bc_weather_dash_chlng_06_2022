@@ -3,10 +3,11 @@
 }
 
 body, html {
-  margin: 0;
+  margin-bottom: 12px;
   font-family: 'Newsreader';
   background-color: slategray;
-}
+  letter-spacing: 2px;
+} 
 
 .hero {
   padding: 3% 4%;
@@ -31,7 +32,7 @@ header p {
   letter-spacing: 4px;
 }
 
-main {
+/* main {
   margin: 20px auto;
   width: 100%;
 }
@@ -39,20 +40,22 @@ main {
 .card { 
   font-size: 20px;
   letter-spacing: 3px;
+  background-color: rgb(253, 251, 251);
   padding: 20px 20px;
   color: #2c4566;
-  width: 550px;
-}
+  /* width: 550px; */
+/* }  */
 
 .card-body {
   display: flex;
-  flex-direction: row;
   display: flex;
   flex-direction: column;
   line-height: 1.8;
 }
 
-.form-input {
+
+
+/* .form-input {
   font-size: 16px;
   letter-spacing: 1px;
   padding: 8px;
@@ -60,21 +63,63 @@ main {
   border: 0px solid #2c4566;
 }
 
-.btn {
-  margin-top: 15px;
-  padding: 8px;
-  color: whitesmoke;
+aside {
+  border: 2px solid slategray;
+  border-radius: 8px;
+} */
+
+.search-box {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  background-color: lightslategray;
+  border: 2px solid slategray;
+  border-radius: 8px;
+  padding: 12px 12px;
+}
+
+.search-box input {
+  display: flex;
+  flex: 1 80;
+  border: 2px solid lightgray;
+}
+
+.search-box li {
   font-size: 20px;
-  letter-spacing: 2px;
+  padding: 6px 6px;
+  margin-bottom: 8px;
+  border: 2px solid lightgray;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.search-box li:hover {
+  background-color: aliceblue;
+}
+
+.btn {
+  display: flex;
+  flex: 2 20;
+  padding: 2px 6px;
+  margin-left: 8px;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 4px;
   background-color: royalblue;
   border: 1px solid slategray;
-  border-radius: 8px;
+  border-radius: 3px;
   box-shadow: 0px 1px 1px 0px rgba(99, 137, 252, 2)
+}
+
+.btn:hover {
+  background-color: royalblue;
+  opacity: 90%;
+  color: white;
 }
 
 /* ______________________________________________________________________________ */
 
-.previous-cities {
+/* .previous-cities {
   border-top: 2px solid whitesmoke;
   flex: 2;
 }
@@ -102,4 +147,4 @@ main {
   padding: 50px;
   width: auto;
   flex: 2 100;
-}
+}  */

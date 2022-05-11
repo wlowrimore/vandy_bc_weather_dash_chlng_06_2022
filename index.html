@@ -14,21 +14,25 @@
   <title>Weather Dashboard</title>
 </head>
 
-<body class="flex-column min-100-vh">
+<body>
   <header class="hero">
     <h1 class="app-title">Weather Dashboard</h1>
     <p>Find any city's weather!</p>
   </header>
 
-    <main class="flex-container content">
-      <div class="flex-city">
-        <div class="card">
-          <h2 class="card-body">Search for a City:</h2>
-          <form>
-            <label class="form-label" for="city"></label>
-            <input name="city" type="text" auto-focus="true" id="search" class="form-input" placeholder="enter city name" />
-            <button type="submit" class="btn" id="btn">Search</button>
-          </form>
+  <div class="container-fluid">
+    <div class="row">
+      <aside class="col-lg-3 bg-light search-box">
+        <h3 class="mt-1">Search for a City:</h3>
+        <div class="form-inline form-group">
+          <input class="form-control" type="text" id="search" placeholder="enter a city name" />
+          <div>
+            <button class="btn" id="btn">Search</button>
+          </div>
+        </div>
+
+        <ul class="list-group" id="history-list"></ul>
+      </aside>
 
           <ul class="list-group" id="history-list"></ul>
         </div>
