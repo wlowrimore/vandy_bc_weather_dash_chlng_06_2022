@@ -4,7 +4,7 @@
 
 ## Description
 
-The Weather Dashboard is a site that returns requested weather data from a Third-Party API ( http://openweathermap.com ). The user searches for a city by city name. The current weather and 5-day forecast for that city are then returned to a posished, mobile friendly UI. Included in the data are: Temperature, Windspeed, Humidity, and UV Index.
+The Weather Dashboard is a site that returns requested weather data from a Third-Party API ( http://openweathermap.com ). The user searches for a city by city name. The current weather and 5-day forecast for that city are then returned to a polished, mobile friendly UI. Included in the data are: Temperature, Windspeed, Humidity, and UV Index.
 
 ## Table of Contents
 
