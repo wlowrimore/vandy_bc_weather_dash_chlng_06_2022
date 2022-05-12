@@ -33,7 +33,7 @@ MIT
 
 ### Contributing:
 
-If you would like to contribute, create a pull request, work your magic, and submit your contribution back to me. I will contact you via email after reviewing your submition.
+If you would like to contribute, create a pull request, work your magic, and submit your contribution back to me. I will contact you via email after reviewing your submission.
 
 ### Questions:
 
