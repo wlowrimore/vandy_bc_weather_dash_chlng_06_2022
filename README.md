@@ -16,7 +16,9 @@ The Weather Dashboard is a site that returns requested weather data from a Third
 
 ### Installation:
 
-No installation required.
+There is no installation required, however if you would like to give it a try, just click the icon below to be redirected to the deployed site.
+
+<img src="assets\images\weather-partly-rainy.png">
 
 ### Usage:
 
