@@ -18,7 +18,7 @@ The Weather Dashboard is a site that returns requested weather data from a Third
 
 There is no installation required, however if you would like to give it a try, just click the weather icon below to be redirected to the deployed site.</br></br>
 
-<a href="https://wlowrimore.github.io/vandy_bc_weather_dash_chlng_06_2022/"><img src="assets\images\weather-partly-rainy.png"></a>
+<a href="https://wlowrimore.github.io/vandy_bc_weather_dash_chlng_06_2022/" target="_blank"><img src="assets\images\weather-partly-rainy.png"></a>
 
 ### Usage:
 
